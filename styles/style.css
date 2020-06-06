@@ -299,83 +299,57 @@ section {
   padding: 30px;
 }
 
-.question1,
-.question2 {
-  border: 1px solid #000000;
-}
-
-#section1 {
+#sectionOne,
+#sectionSix {
   background-color: #C38D9E;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
 }
 
-#section2 {
+#sectionTwo,
+#sectionSeven {
   background-color: #E8A87C;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
 }
 
-#section3 {
+#sectionThree,
+#sectionEight {
   background-color: #85DCBA;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
 }
 
-#section4 {
+#sectionFour,
+#sectionNine {
   background-color: #E27D60;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
 }
 
-#section5 {
-  background-color: #C38D9E;
+#sectionFive,
+#sectionTen {
+  background-color: #41B3A3;
+}
+
+#sectionOne,
+#sectionThree,
+#sectionFive,
+#sectionSeven,
+#sectionNine {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
 }
 
-#section6 {
-  background-color: #E8A87C;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-}
-
-#section7 {
-  background-color: #85DCBA;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-#section8 {
-  background-color: #E27D60;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-}
-
-#section9 {
-  background-color: #C38D9E;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-#section10 {
-  background-color: #E8A87C;
+#sectionTwo,
+#sectionFour,
+#sectionSix,
+#sectionEight,
+#sectionTen {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
 }
 
 #closingSection {
-  background-color: #41B3A3;
+  background-color: #C38D9E;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

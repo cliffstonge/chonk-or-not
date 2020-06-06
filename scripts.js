@@ -1,103 +1,68 @@
-$(function(){
+const chonkApp = {};
 
-    // Header
-    // User clicks "start" button and screen scrolls to first question
+chonkApp.init = function(){
+    // Header section user clicks "start" button and screen scrolls to first question
 
-    $('#startButton').on('click', function(){
+    $('.startButton').on('click', function(){
         $('html, body').animate({
-            scrollTop: $('#section1').offset().top
+            scrollTop: $('#sectionOne').offset().top
         }, 1000);
     });
 
-    // Image sections
-    // User clicks "yes" or "no" button under individual questions, which hides the buttons and displays response (dertermined by if/else statements)
+    // Question section user clicks "yes" or "no" button under individual questions, which hides the buttons and displays response
 
-    $('.question1 .yesButton').on('click', function(){
-        $('.question1 button').hide(),
-        $('.question1 .answerButtons').append(`<p>Correct: they are chonkerific</p>`)
+    $('.answerOneButtons .yesButton').on('click', function(){
+        const answer = $(this).attr('data-question');
+        $(`.${answer} button`).hide();
+        $(`.${answer} .answerOneButtons`).append(`<p>Correct: they are chonkerific</p>`);
     });
 
-    $('.question1 .noButton').on('click', function(){
-        $('.question1 button').hide(),
-        $('.question1 .answerButtons').append(`<p>Incorrect: this is an absolute unit</p>`)
+    $('.answerOneButtons .noButton').on('click', function(){
+        const answer = $(this).attr('data-question');
+        $(`.${answer} button`).hide();
+        $(`.${answer} .answerOneButtons`).append(`<p>Incorrect: this is an absolute unit</p>`);
     });
 
-    $('.question2 .yesButton').on('click', function(){
-        $('.question2 button').hide(),
-        $('.question2 .answerButtons').append(`<p>Correct: they are the goodest of chonkers</p>`)
+    $('.answerTwoButtons .yesButton').on('click', function(){
+        const answer = $(this).attr('data-question');
+        $(`.${answer} button`).hide();
+        $(`.${answer} .answerTwoButtons`).append(`<p>Correct: they are the goodest of chonkers</p>`);
     });
 
-    $('.question2 .noButton').on('click', function(){
-        $('.question2 button').hide(),
-        $('.question2 .answerButtons').append(`<p>Incorrect: all chonkers are good chonkers</p>`)
+    $('.answerTwoButtons .noButton').on('click', function(){
+        const answer = $(this).attr('data-question');
+        $(`.${answer} button`).hide();
+        $(`.${answer} .answerTwoButtons`).append(`<p>Incorrect: all chonkers are good chonkers</p>`);
     });
             
     // User clicks "next" button and screen scrolls to next question
 
-    $('#section1 .nextButton').on('click', function(){
+    $('.nextSection .nextButton').on('click', function(){
+        const scrollTo = $(this).attr('data-next');
         $('html, body').animate({
-            scrollTop: $('#section2').offset().top
+            scrollTop: $(`#${scrollTo}`).offset().top
         }, 1000);
+    })
+
+    // Closing section user clicks "yes" or "no" button which hides the buttons, displays response, and reveals bonus image with restart button
+
+    $('.closingQuestion .yesButton').on('click', function(){
+        $('.closingQuestion button').hide(),
+        $('.closingQuestion .answerButtons').append(`
+        <p>Good, here is a bonus chonker for you</p>
+        <img src="https://placebear.com/500/500" alt="">
+        <button onClick="location.href=location.href">Restart from beginning</button>`)
     });
 
-    $('#section2 .nextButton').on('click', function(){
-        $('html, body').animate({
-            scrollTop: $('#section3').offset().top
-        }, 1000);
+    $('.closingQuestion .noButton').on('click', function(){
+        $('.closingQuestion button').hide(),
+        $('.closingQuestion .answerButtons').append(`
+        <p>Well the chonky animals did not enjoy you either</p>
+        <img src="https://placebear.com/500/500" alt="">
+        <button onclick="location.href=location.href">Restart from beginning</button>`)
     });
+};
 
-    $('#section3 .nextButton').on('click', function(){
-        $('html, body').animate({
-            scrollTop: $('#section4').offset().top
-        }, 1000);
-    });
-
-    $('#section4 .nextButton').on('click', function(){
-        $('html, body').animate({
-            scrollTop: $('#section5').offset().top
-        }, 1000);
-    });
-
-    $('#section5 .nextButton').on('click', function(){
-        $('html, body').animate({
-            scrollTop: $('#section6').offset().top
-        }, 1000);
-    });
-
-    $('#section6 .nextButton').on('click', function(){
-        $('html, body').animate({
-            scrollTop: $('#section7').offset().top
-        }, 1000);
-    });
-
-    $('#section7 .nextButton').on('click', function(){
-        $('html, body').animate({
-            scrollTop: $('#section8').offset().top
-        }, 1000);
-    });
-
-    $('#section8 .nextButton').on('click', function(){
-        $('html, body').animate({
-            scrollTop: $('#section9').offset().top
-        }, 1000);
-    });
-
-    $('#section9 .nextButton').on('click', function(){
-        $('html, body').animate({
-            scrollTop: $('#section10').offset().top
-        }, 1000);
-    });
-
-    $('#section10 .nextButton').on('click', function(){
-        $('html, body').animate({
-            scrollTop: $('#closingSection').offset().top
-        }, 1000);
-    });
-
-    // Closing section
-    // User clicks "yes" or "no" button which hides the buttons, displays response (dertermined by if/else statements), and reveals bonus image with restart button (hard refresh)
-
-    
-    // "Good, here is a bonus chonker for you" 
-    // "No" = "Well the chonky animals did not enjoy you either"
+$(function(){
+    chonkApp.init();
 });
