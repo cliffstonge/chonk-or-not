@@ -4,314 +4,338 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chonk or Not?</title>
-    <!-- link google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Chonk or Not?</h1>
+        <div class="headerText wrapper">
+            <h1>Chonk or Not?</h1>
 
-        <h2>A celebration of chonky animals</h2>
+            <h2>A celebration of chonky animals</h2>
 
-        <button class="startButton">Show me them chonkers!</button>
+            <button class="startButton">Show me dem chonkers!</button>
+        </div>
     </header>
 
     <main>
         <section class="nextSection" id="sectionOne">
-            <div class="image">
-                <img src="https://placebear.com/300/400" alt="">
-            </div>
-
-            <div class="questions">
-                <div class="sectionOneQuestionOne">
-                    <p>Is this a chonker?</p>
-                    
-                    <div class="answerOneButtons">
-                        <button data-question="sectionOneQuestionOne" class="yesButton">Yes</button>
-                        <button data-question="sectionOneQuestionOne" class="noButton">No</button>
-                    </div>
+            <div class="chonkLeft wrapper">
+                <div class="image">
+                    <img src="./images/bear.jpeg" alt="Chonky bear with brown and black fur sitting upright on ground, with their tongue sticking out a little bit.">
                 </div>
 
-                <div class="sectionOneQuestionTwo">
-                    <p>Are they a good chonker?</p>
-
-                    <div class="answerTwoButtons">
-                        <button data-question="sectionOneQuestionTwo" class="yesButton">Yes</button>
-                        <button data-question="sectionOneQuestionTwo" class="noButton">No</button>
+                <div class="questions">
+                    <div class="sectionOneQuestionOne">
+                        <p>Is this a chonker?</p>
+                        
+                        <div class="answerOneButtons">
+                            <button data-question="sectionOneQuestionOne" class="yesButton">Yes</button>
+                            <button data-question="sectionOneQuestionOne" class="noButton">No</button>
+                        </div>
                     </div>
-                </div>
 
-                <button class="nextButton" data-next="sectionTwo">Next</button>
+                    <div class="sectionOneQuestionTwo">
+                        <p>Are they a good chonker?</p>
+
+                        <div class="answerTwoButtons">
+                            <button data-question="sectionOneQuestionTwo" class="yesButton">Yes</button>
+                            <button data-question="sectionOneQuestionTwo" class="noButton">No</button>
+                        </div>
+                    </div>
+
+                    <button class="nextButton" data-next="sectionTwo">Next</button>
+                </div>
             </div>
         </section>
 
         <section class="nextSection" id="sectionTwo">
-            <div class="image">
-                <img src="https://placebear.com/300/400" alt="">
-            </div>
-
-            <div class="questions">
-                <div class="sectionTwoQuestionOne">
-                    <p>Is this a chonker?</p>
-                    
-                    <div class="answerOneButtons">
-                        <button data-question="sectionTwoQuestionOne" class="yesButton">Yes</button>
-                        <button data-question="sectionTwoQuestionOne" class="noButton">No</button>
-                    </div>
+            <div class="chonkRight wrapper">
+                <div class="image">
+                    <img src="./images/raccoon.jpeg" alt="Chonky raccoon sitting in grass with fur all puffed up.">
                 </div>
 
-                <div class="sectionTwoQuestionTwo">
-                    <p>Are they a good chonker?</p>
-
-                    <div class="answerTwoButtons">
-                        <button data-question="sectionTwoQuestionTwo" class="yesButton">Yes</button>
-                        <button data-question="sectionTwoQuestionTwo" class="noButton">No</button>
+                <div class="questions">
+                    <div class="sectionTwoQuestionOne">
+                        <p>Is this a chonker?</p>
+                        
+                        <div class="answerOneButtons">
+                            <button data-question="sectionTwoQuestionOne" class="yesButton">Yes</button>
+                            <button data-question="sectionTwoQuestionOne" class="noButton">No</button>
+                        </div>
                     </div>
-                </div>
 
-                <button class="nextButton" data-next="sectionThree">Next</button>
+                    <div class="sectionTwoQuestionTwo">
+                        <p>Are they a good chonker?</p>
+
+                        <div class="answerTwoButtons">
+                            <button data-question="sectionTwoQuestionTwo" class="yesButton">Yes</button>
+                            <button data-question="sectionTwoQuestionTwo" class="noButton">No</button>
+                        </div>
+                    </div>
+
+                    <button class="nextButton" data-next="sectionThree">Next</button>
+                </div>
             </div>
         </section>
 
         <section class="nextSection" id="sectionThree">
-            <div class="image">
-                <img src="https://placebear.com/300/400" alt="">
-            </div>
-
-            <div class="questions">
-                <div class="sectionThreeQuestionOne">
-                    <p>Is this a chonker?</p>
-                    
-                    <div class="answerOneButtons">
-                        <button data-question="sectionThreeQuestionOne" class="yesButton">Yes</button>
-                        <button data-question="sectionThreeQuestionOne" class="noButton">No</button>
-                    </div>
+            <div class="chonkLeft wrapper">
+                <div class="image">
+                    <img src="./images/seal.jpeg" alt="Chonky seal sitting on a grate all squished up into a ball.">
                 </div>
 
-                <div class="sectionThreeQuestionTwo">
-                    <p>Are they a good chonker?</p>
-
-                    <div class="answerTwoButtons">
-                        <button data-question="sectionThreeQuestionTwo" class="yesButton">Yes</button>
-                        <button data-question="sectionThreeQuestionTwo" class="noButton">No</button>
+                <div class="questions">
+                    <div class="sectionThreeQuestionOne">
+                        <p>Is this a chonker?</p>
+                        
+                        <div class="answerOneButtons">
+                            <button data-question="sectionThreeQuestionOne" class="yesButton">Yes</button>
+                            <button data-question="sectionThreeQuestionOne" class="noButton">No</button>
+                        </div>
                     </div>
-                </div>
 
-                <button class="nextButton" data-next="sectionFour">Next</button>
+                    <div class="sectionThreeQuestionTwo">
+                        <p>Are they a good chonker?</p>
+
+                        <div class="answerTwoButtons">
+                            <button data-question="sectionThreeQuestionTwo" class="yesButton">Yes</button>
+                            <button data-question="sectionThreeQuestionTwo" class="noButton">No</button>
+                        </div>
+                    </div>
+
+                    <button class="nextButton" data-next="sectionFour">Next</button>
+                </div>
             </div>
         </section>
 
         <section class="nextSection" id="sectionFour">
-            <div class="image">
-                <img src="https://placebear.com/300/400" alt="">
-            </div>
-
-            <div class="questions">
-                <div class="sectionFourQuestionOne">
-                    <p>Is this a chonker?</p>
-                    
-                    <div class="answerOneButtons">
-                        <button data-question="sectionFourQuestionOne" class="yesButton">Yes</button>
-                        <button data-question="sectionFourQuestionOne" class="noButton">No</button>
-                    </div>
+            <div class="chonkRight wrapper">
+                <div class="image">
+                    <img src="./images/cat.jpeg" alt="Chonky black and white cat sitting upright in bed and looking straight into camera">
                 </div>
 
-                <div class="sectionFourQuestionTwo">
-                    <p>Are they a good chonker?</p>
-
-                    <div class="answerTwoButtons">
-                        <button data-question="sectionFourQuestionTwo" class="yesButton">Yes</button>
-                        <button data-question="sectionFourQuestionTwo" class="noButton">No</button>
+                <div class="questions">
+                    <div class="sectionFourQuestionOne">
+                        <p>Is this a chonker?</p>
+                        
+                        <div class="answerOneButtons">
+                            <button data-question="sectionFourQuestionOne" class="yesButton">Yes</button>
+                            <button data-question="sectionFourQuestionOne" class="noButton">No</button>
+                        </div>
                     </div>
-                </div>
 
-                <button class="nextButton" data-next="sectionFive">Next</button>
+                    <div class="sectionFourQuestionTwo">
+                        <p>Are they a good chonker?</p>
+
+                        <div class="answerTwoButtons">
+                            <button data-question="sectionFourQuestionTwo" class="yesButton">Yes</button>
+                            <button data-question="sectionFourQuestionTwo" class="noButton">No</button>
+                        </div>
+                    </div>
+
+                    <button class="nextButton" data-next="sectionFive">Next</button>
+                </div>
             </div>
         </section>
 
         <section class="nextSection" id="sectionFive">
-            <div class="image">
-                <img src="https://placebear.com/300/400" alt="">
-            </div>
-
-            <div class="questions">
-                <div class="sectionFiveQuestionOne">
-                    <p>Is this a chonker?</p>
-                    
-                    <div class="answerOneButtons">
-                        <button data-question="sectionFiveQuestionOne" class="yesButton">Yes</button>
-                        <button data-question="sectionFiveQuestionOne" class="noButton">No</button>
-                    </div>
+            <div class="chonkLeft wrapper">
+                <div class="image">
+                    <img src="./images/squirrel.jpeg" alt="Chonky squirrel sitting on a piece of wood with paws clasped in front of their round little body.">
                 </div>
 
-                <div class="sectionFiveQuestionTwo">
-                    <p>Are they a good chonker?</p>
-
-                    <div class="answerTwoButtons">
-                        <button data-question="sectionFiveQuestionTwo" class="yesButton">Yes</button>
-                        <button data-question="sectionFiveQuestionTwo" class="noButton">No</button>
+                <div class="questions">
+                    <div class="sectionFiveQuestionOne">
+                        <p>Is this a chonker?</p>
+                        
+                        <div class="answerOneButtons">
+                            <button data-question="sectionFiveQuestionOne" class="yesButton">Yes</button>
+                            <button data-question="sectionFiveQuestionOne" class="noButton">No</button>
+                        </div>
                     </div>
-                </div>
 
-                <button class="nextButton" data-next="sectionSix">Next</button>
+                    <div class="sectionFiveQuestionTwo">
+                        <p>Are they a good chonker?</p>
+
+                        <div class="answerTwoButtons">
+                            <button data-question="sectionFiveQuestionTwo" class="yesButton">Yes</button>
+                            <button data-question="sectionFiveQuestionTwo" class="noButton">No</button>
+                        </div>
+                    </div>
+
+                    <button class="nextButton" data-next="sectionSix">Next</button>
+                </div>
             </div>
         </section>
 
         <section class="nextSection" id="sectionSix">
-            <div class="image">
-                <img src="https://placebear.com/300/400" alt="">
-            </div>
-
-            <div class="questions">
-                <div class="sectionSixQuestionOne">
-                    <p>Is this a chonker?</p>
-                    
-                    <div class="answerOneButtons">
-                        <button data-question="sectionSixQuestionOne" class="yesButton">Yes</button>
-                        <button data-question="sectionSixQuestionOne" class="noButton">No</button>
-                    </div>
+            <div class="chonkRight wrapper">
+                <div class="image">
+                    <img src="./images/birb.jpeg" alt="Chonky  little bird perched on a branch looking all puffed up.">
                 </div>
 
-                <div class="sectionSixQuestionTwo">
-                    <p>Are they a good chonker?</p>
-
-                    <div class="answerTwoButtons">
-                        <button data-question="sectionSixQuestionTwo" class="yesButton">Yes</button>
-                        <button data-question="sectionSixQuestionTwo" class="noButton">No</button>
+                <div class="questions">
+                    <div class="sectionSixQuestionOne">
+                        <p>Is this a chonker?</p>
+                        
+                        <div class="answerOneButtons">
+                            <button data-question="sectionSixQuestionOne" class="yesButton">Yes</button>
+                            <button data-question="sectionSixQuestionOne" class="noButton">No</button>
+                        </div>
                     </div>
-                </div>
 
-                <button class="nextButton" data-next="sectionSeven">Next</button>
+                    <div class="sectionSixQuestionTwo">
+                        <p>Are they a good chonker?</p>
+
+                        <div class="answerTwoButtons">
+                            <button data-question="sectionSixQuestionTwo" class="yesButton">Yes</button>
+                            <button data-question="sectionSixQuestionTwo" class="noButton">No</button>
+                        </div>
+                    </div>
+
+                    <button class="nextButton" data-next="sectionSeven">Next</button>
+                </div>
             </div>
         </section>
 
         <section class="nextSection" id="sectionSeven">
-            <div class="image">
-                <img src="https://placebear.com/300/400" alt="">
-            </div>
-
-            <div class="questions">
-                <div class="sectionSevenQuestionOne">
-                    <p>Is this a chonker?</p>
-                    
-                    <div class="answerOneButtons">
-                        <button data-question="sectionSevenQuestionOne" class="yesButton">Yes</button>
-                        <button data-question="sectionSevenQuestionOne" class="noButton">No</button>
-                    </div>
+            <div class="chonkLeft wrapper">
+                <div class="image">
+                    <img src="./images/tiger.jpeg" alt="Side profile of a chonky tiger sitting in an enclosure.">
                 </div>
 
-                <div class="sectionSevenQuestionTwo">
-                    <p>Are they a good chonker?</p>
-
-                    <div class="answerTwoButtons">
-                        <button data-question="sectionSevenQuestionTwo" class="yesButton">Yes</button>
-                        <button data-question="sectionSevenQuestionTwo" class="noButton">No</button>
+                <div class="questions">
+                    <div class="sectionSevenQuestionOne">
+                        <p>Is this a chonker?</p>
+                        
+                        <div class="answerOneButtons">
+                            <button data-question="sectionSevenQuestionOne" class="yesButton">Yes</button>
+                            <button data-question="sectionSevenQuestionOne" class="noButton">No</button>
+                        </div>
                     </div>
-                </div>
 
-                <button class="nextButton" data-next="sectionEight">Next</button>
+                    <div class="sectionSevenQuestionTwo">
+                        <p>Are they a good chonker?</p>
+
+                        <div class="answerTwoButtons">
+                            <button data-question="sectionSevenQuestionTwo" class="yesButton">Yes</button>
+                            <button data-question="sectionSevenQuestionTwo" class="noButton">No</button>
+                        </div>
+                    </div>
+
+                    <button class="nextButton" data-next="sectionEight">Next</button>
+                </div>
             </div>
         </section>
 
         <section class="nextSection" id="sectionEight">
-            <div class="image">
-                <img src="https://placebear.com/300/400" alt="">
-            </div>
-
-            <div class="questions">
-                <div class="sectionEightQuestionOne">
-                    <p>Is this a chonker?</p>
-                    
-                    <div class="answerOneButtons">
-                        <button data-question="sectionEightQuestionOne" class="yesButton">Yes</button>
-                        <button data-question="sectionEightQuestionOne" class="noButton">No</button>
-                    </div>
+            <div class="chonkRight wrapper">
+                <div class="image">
+                    <img src="./images/prairieDog.jpeg" alt="Chonky prairie dog sitting up on ground with their little paws dangling in front of them.">
                 </div>
 
-                <div class="sectionEightQuestionTwo">
-                    <p>Are they a good chonker?</p>
-
-                    <div class="answerTwoButtons">
-                        <button data-question="sectionEightQuestionTwo" class="yesButton">Yes</button>
-                        <button data-question="sectionEightQuestionTwo" class="noButton">No</button>
+                <div class="questions">
+                    <div class="sectionEightQuestionOne">
+                        <p>Is this a chonker?</p>
+                        
+                        <div class="answerOneButtons">
+                            <button data-question="sectionEightQuestionOne" class="yesButton">Yes</button>
+                            <button data-question="sectionEightQuestionOne" class="noButton">No</button>
+                        </div>
                     </div>
-                </div>
 
-                <button class="nextButton" data-next="sectionNine">Next</button>
+                    <div class="sectionEightQuestionTwo">
+                        <p>Are they a good chonker?</p>
+
+                        <div class="answerTwoButtons">
+                            <button data-question="sectionEightQuestionTwo" class="yesButton">Yes</button>
+                            <button data-question="sectionEightQuestionTwo" class="noButton">No</button>
+                        </div>
+                    </div>
+
+                    <button class="nextButton" data-next="sectionNine">Next</button>
+                </div>
             </div>
         </section>
 
         <section class="nextSection" id="sectionNine">
-            <div class="image">
-                <img src="https://placebear.com/300/400" alt="">
-            </div>
-
-            <div class="questions">
-                <div class="sectionNineQuestionOne">
-                    <p>Is this a chonker?</p>
-                    
-                    <div class="answerOneButtons">
-                        <button data-question="sectionNineQuestionOne" class="yesButton">Yes</button>
-                        <button data-question="sectionNineQuestionOne" class="noButton">No</button>
-                    </div>
+            <div class="chonkLeft wrapper">
+                <div class="image">
+                    <img src="./images/walrus.jpeg" alt="Absolute unit of a walrus sitting on an ice floe looking majestic.">
                 </div>
 
-                <div class="sectionNineQuestionTwo">
-                    <p>Are they a good chonker?</p>
-
-                    <div class="answerTwoButtons">
-                        <button data-question="sectionNineQuestionTwo" class="yesButton">Yes</button>
-                        <button data-question="sectionNineQuestionTwo" class="noButton">No</button>
+                <div class="questions">
+                    <div class="sectionNineQuestionOne">
+                        <p>Is this a chonker?</p>
+                        
+                        <div class="answerOneButtons">
+                            <button data-question="sectionNineQuestionOne" class="yesButton">Yes</button>
+                            <button data-question="sectionNineQuestionOne" class="noButton">No</button>
+                        </div>
                     </div>
-                </div>
 
-                <button class="nextButton" data-next="sectionTen">Next</button>
+                    <div class="sectionNineQuestionTwo">
+                        <p>Are they a good chonker?</p>
+
+                        <div class="answerTwoButtons">
+                            <button data-question="sectionNineQuestionTwo" class="yesButton">Yes</button>
+                            <button data-question="sectionNineQuestionTwo" class="noButton">No</button>
+                        </div>
+                    </div>
+
+                    <button class="nextButton" data-next="sectionTen">Next</button>
+                </div>
             </div>
         </section>
 
         <section class="nextSection" id="sectionTen">
-            <div class="image">
-                <img src="https://placebear.com/300/400" alt="">
-            </div>
-
-            <div class="questions">
-                <div class="sectionTenQuestionOne">
-                    <p>Is this a chonker?</p>
-                    
-                    <div class="answerOneButtons">
-                        <button data-question="sectionTenQuestionOne" class="yesButton">Yes</button>
-                        <button data-question="sectionTenQuestionOne" class="noButton">No</button>
-                    </div>
+            <div class="chonkRight wrapper">
+                <div class="image">
+                    <img src="./images/dog.jpeg" alt="Chonky little pug sitting outside with a big smile on their face and tongue hanging out.">
                 </div>
 
-                <div class="sectionTenQuestionTwo">
-                    <p>Are they a good chonker?</p>
-
-                    <div class="answerTwoButtons">
-                        <button data-question="sectionTenQuestionTwo" class="yesButton">Yes</button>
-                        <button data-question="sectionTenQuestionTwo" class="noButton">No</button>
+                <div class="questions">
+                    <div class="sectionTenQuestionOne">
+                        <p>Is this a chonker?</p>
+                        
+                        <div class="answerOneButtons">
+                            <button data-question="sectionTenQuestionOne" class="yesButton">Yes</button>
+                            <button data-question="sectionTenQuestionOne" class="noButton">No</button>
+                        </div>
                     </div>
-                </div>
 
-                <button class="nextButton" data-next="closingSection">Next</button>
+                    <div class="sectionTenQuestionTwo">
+                        <p>Are they a good chonker?</p>
+
+                        <div class="answerTwoButtons">
+                            <button data-question="sectionTenQuestionTwo" class="yesButton">Yes</button>
+                            <button data-question="sectionTenQuestionTwo" class="noButton">No</button>
+                        </div>
+                    </div>
+
+                    <button class="nextButton" data-next="closingSection">Next</button>
+                </div>
             </div>
         </section>
 
         <section id="closingSection">
-            <div class="closingQuestion">
+            <div class="closingQuestion wrapper">
                 <p>Did you enjoy these chonky animals?</p>
                 
-                <div class="answerButtons">
-                    <button class="yesButton">Yes</button>
-                    <button class="noButton">No</button>
+                <div class="closingButtons">
+                    <button class="yesButton buttonWidth">Yes</button>
+                    <button class="noButton buttonWidth">No</button>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>This is a chonk safe space. Chonk-shaming of any kind will not be tolerated.</p>
+        <div class="wrapper">
+            <p>This is a chonk safe space. Chonk-shaming of any kind will not be tolerated.</p>
+        </div>
     </footer>
 
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>

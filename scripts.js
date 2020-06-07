@@ -20,7 +20,7 @@ chonkApp.init = function(){
     $('.answerOneButtons .noButton').on('click', function(){
         const answer = $(this).attr('data-question');
         $(`.${answer} button`).hide();
-        $(`.${answer} .answerOneButtons`).append(`<p>Incorrect: this is an absolute unit</p>`);
+        $(`.${answer} .answerOneButtons`).append(`<p><span>Incorrect: this is an absolute unit</span></p>`);
     });
 
     $('.answerTwoButtons .yesButton').on('click', function(){
@@ -32,7 +32,7 @@ chonkApp.init = function(){
     $('.answerTwoButtons .noButton').on('click', function(){
         const answer = $(this).attr('data-question');
         $(`.${answer} button`).hide();
-        $(`.${answer} .answerTwoButtons`).append(`<p>Incorrect: all chonkers are good chonkers</p>`);
+        $(`.${answer} .answerTwoButtons`).append(`<p><span>Incorrect: all chonkers are good chonkers</span></p>`);
     });
             
     // User clicks "next" button and screen scrolls to next question
@@ -48,17 +48,17 @@ chonkApp.init = function(){
 
     $('.closingQuestion .yesButton').on('click', function(){
         $('.closingQuestion button').hide(),
-        $('.closingQuestion .answerButtons').append(`
+        $('.closingQuestion .closingButtons').append(`
         <p>Good, here is a bonus chonker for you</p>
-        <img src="https://placebear.com/500/500" alt="">
-        <button onClick="location.href=location.href">Restart from beginning</button>`)
+        <img src="./images/bonusYes.jpeg" alt="Chonky baby penuin sitting in snow and smiling.">
+        <button onclick="location.href=location.href">Restart from beginning</button>`)
     });
 
     $('.closingQuestion .noButton').on('click', function(){
         $('.closingQuestion button').hide(),
-        $('.closingQuestion .answerButtons').append(`
-        <p>Well the chonky animals did not enjoy you either</p>
-        <img src="https://placebear.com/500/500" alt="">
+        $('.closingQuestion .closingButtons').append(`
+        <p><span>Well the chonky animals did not enjoy you either</span></p>
+        <img src="./images/bonusNo.jpeg" alt="Chonky cat sitting outside in grass, looking up and howling.">
         <button onclick="location.href=location.href">Restart from beginning</button>`)
     });
 };

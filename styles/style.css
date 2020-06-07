@@ -236,30 +236,77 @@ html {
 }
 
 * {
+  color: #000000;
+}
+
+header,
+#sectionFive,
+#sectionTen {
+  background-color: #41c3a3;
+}
+
+#sectionOne,
+#sectionSix,
+#closingSection {
+  background-color: #c38d9e;
+}
+
+#sectionTwo,
+#sectionSeven {
+  background-color: #e8a87c;
+}
+
+#sectionThree,
+#sectionEight {
+  background-color: #85dcba;
+}
+
+#sectionFour,
+#sectionNine {
+  background-color: #e27d60;
+}
+
+.answerOneButtons p,
+.answerTwoButtons p,
+.closingButtons p {
+  color: #043f04;
+}
+
+.answerOneButtons span,
+.answerTwoButtons span,
+.closingButtons span {
+  color: #690b13;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+footer {
+  background-color: #000000;
+}
+
+* {
   margin: 0;
   padding: 0;
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 img {
   width: 100%;
   display: block;
+  border: 16px solid #ffffff;
 }
 
 header {
-  background-color: #41B3A3;
   height: calc(100vh - 40px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -268,77 +315,61 @@ header {
           align-items: center;
 }
 
+.headerText {
+  text-align: center;
+}
+
 header h1 {
-  font-size: 80px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 120px;
   margin: 0 auto;
 }
 
 header h2 {
-  font-size: 40px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 60px;
   margin: 0 auto;
+}
+
+button {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  min-width: 80px;
+  padding: 10px;
+  border: none;
+  margin: 10px 20px 10px 0;
 }
 
 header button {
-  margin: 0 auto;
+  font-size: 30px;
+  padding: 10px 20px;
+  margin: 20px auto;
 }
 
-section {
-  height: 100vh;
+section p {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.chonkLeft,
+.chonkRight {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 80px;
 }
 
-.image {
-  width: 25%;
-  padding: 30px;
-}
-
-.questions {
-  width: 50%;
-  padding: 30px;
-}
-
-#sectionOne,
-#sectionSix {
-  background-color: #C38D9E;
-}
-
-#sectionTwo,
-#sectionSeven {
-  background-color: #E8A87C;
-}
-
-#sectionThree,
-#sectionEight {
-  background-color: #85DCBA;
-}
-
-#sectionFour,
-#sectionNine {
-  background-color: #E27D60;
-}
-
-#sectionFive,
-#sectionTen {
-  background-color: #41B3A3;
-}
-
-#sectionOne,
-#sectionThree,
-#sectionFive,
-#sectionSeven,
-#sectionNine {
+.chonkLeft {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
 }
 
-#sectionTwo,
-#sectionFour,
-#sectionSix,
-#sectionEight,
-#sectionTen {
+.chonkRight {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -348,26 +379,72 @@ section {
           justify-content: right;
 }
 
+.image {
+  width: 500px;
+  min-width: 400px;
+}
+
+.questions {
+  width: 30%;
+  margin: 0 5%;
+}
+
+.answerOneButtons,
+.answerTwoButtons {
+  margin-bottom: 30px;
+}
+
+.answerOneButtons p,
+.answerTwoButtons p,
+.closingButtons p {
+  font-weight: 400;
+}
+
 #closingSection {
-  background-color: #C38D9E;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  min-height: 100vh;
 }
 
 .closingQuestion {
   padding: 30px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.closingButtons {
+  margin: 20px auto;
+}
+
+.closingButtons img {
+  width: 500px;
+  min-width: 400px;
+  margin: 20px auto;
+}
+
+.closingButtons p {
+  margin-bottom: 20px;
 }
 
 footer {
-  background-color: #000000;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px;
   height: 40px;
   text-align: center;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+footer p {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px;
 }
