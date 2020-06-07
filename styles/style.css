@@ -266,6 +266,13 @@ header,
   background-color: #e27d60;
 }
 
+button:hover,
+button:focus,
+button:focus-within {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 .answerOneButtons p,
 .answerTwoButtons p,
 .closingButtons p {
@@ -299,7 +306,6 @@ footer {
 img {
   width: 100%;
   display: block;
-  border: 16px solid #ffffff;
 }
 
 header {
@@ -337,9 +343,10 @@ button {
   font-family: 'Cabin', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  min-width: 80px;
-  padding: 10px;
+  min-width: 90px;
+  padding: 10px 20px;
   border: none;
+  border-radius: 10px;
   margin: 10px 20px 10px 0;
 }
 
@@ -347,6 +354,11 @@ header button {
   font-size: 30px;
   padding: 10px 20px;
   margin: 20px auto;
+}
+
+header img {
+  width: 140px;
+  margin: 20px auto 10px auto;
 }
 
 section p {

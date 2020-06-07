@@ -29,6 +29,13 @@ header,
     background-color: #e27d60;
 }
 
+button:hover,
+button:focus,
+button:focus-within {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 .answerOneButtons p,
 .answerTwoButtons p,
 .closingButtons p {
