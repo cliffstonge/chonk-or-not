@@ -14,11 +14,10 @@
 img {
     width: 100%;
     display: block;
-    // border: 1px solid #ffffff;
 }
 
 header {
-    height: calc(100vh - 40px);
+    height: calc(100vh - 42px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +25,7 @@ header {
 
 .headerText {
     text-align: center;
+    padding: 0 20px;
 }
 
 header h1 {
@@ -50,7 +50,7 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
-    margin: 10px 20px 10px 0;
+    margin: 10px 0;
 }
 
 header button {
@@ -106,6 +106,10 @@ section p {
     font-weight: 400;
 }
 
+.yesButton {
+    margin-right: 20px;
+}
+
 #closingSection {
     min-height: 100vh;
 }
@@ -133,7 +137,6 @@ section p {
 }
 
 footer {
-    height: 40px;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -146,4 +149,72 @@ footer p {
     font-weight: 400;
     font-size: 20px;
     padding: 10px;
+}
+
+// Responsive design begins here
+
+@media (max-width: 940px) {
+    header {
+        height: 100vh;
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+    button {
+        padding: 20px;
+    }
+
+    header button {
+        font-size: 26px;
+        padding: 20px;
+    }
+
+    header img {
+        width: 100px;
+        margin: 20px auto 10px auto;
+    }
+
+    .image {
+        width: 100%;
+        max-width: 500px;
+        min-width: auto;
+    }
+
+    .questions {
+        width: auto;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .chonkLeft,
+    .chonkRight {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+    }
+
+    #closingSection {
+        min-height: calc(100vh - 42px);
+    }
+
+    .closingButtons img {
+        width: 100%;
+        max-width: 500px;
+        min-width: auto;
+    }
+
+    footer {
+        position: static;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
 }

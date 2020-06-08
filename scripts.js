@@ -52,6 +52,7 @@ chonkApp.init = function(){
         <p>Good, here is a bonus chonker for you</p>
         <img src="./images/bonusYes.jpeg" alt="Chonky baby penuin sitting in snow and smiling.">
         <button onclick="location.href=location.href">Restart from beginning</button>`)
+        // image source: https://www.reddit.com/r/aww/comments/a4n3iv/a_chunky_baby_penguin/
     });
 
     $('.closingQuestion .noButton').on('click', function(){
@@ -60,6 +61,7 @@ chonkApp.init = function(){
         <p><span>Well the chonky animals did not enjoy you either</span></p>
         <img src="./images/bonusNo.jpeg" alt="Chonky cat sitting outside in grass, looking up and howling.">
         <button onclick="location.href=location.href">Restart from beginning</button>`)
+        // image source: https://twitter.com/scarermcscary/status/1235297333048467457
     });
 };
 
